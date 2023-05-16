@@ -1,4 +1,8 @@
 # Setup training data generation (windows venv setup)
+> Download or clone this repository to a local folder.
+> 
+> If you have git installed: `git clone https://github.com/gitmylo/bark-data-gen`
+
 > `py -m venv venv` - create the venv (using `py` here, which uses the latest version, if you have a windows store install, use `python`.)
 
 > `call venv/Scripts/activate.bat` - activate the venv
