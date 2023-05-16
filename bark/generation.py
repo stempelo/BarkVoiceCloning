@@ -265,6 +265,7 @@ def load_model(use_gpu=True, use_small=False, force_reload=False, model_type="te
     global models
     global models_devices
     device = _grab_best_device(use_gpu=use_gpu)
+    print('Using device', device)
     model_key = f"{model_type}"
     if OFFLOAD_CPU:
         models_devices[model_key] = device

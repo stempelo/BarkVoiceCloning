@@ -1,3 +1,22 @@
+# Setup training data generation (windows venv setup)
+> `py -m venv venv` - create the venv (using `py` here, which uses the latest version, if you have a windows store install, use `python`.)
+
+> `call venv/Scripts/activate.bat` - activate the venv
+
+> `pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu117 --force` - install torch with cuda (with --force to ensure it gets reinstalled)
+
+> `python create_data.py` - run the script (make sure you're in the venv if you're running it again later)
+
+## Currently there's no public training available.
+I will release my model when I consider it ready.
+Dataset created from shared npy files will be shared on huggingface
+
+### Please share your created semantics to help me train
+Create a zip with your semantics. This is the data I'll need for training. There is still 2 more steps of processing required, but having the semantics helps out a bunch. Thanks.
+
+Send them in dms to `mylo#6228` on discord, or create an issue on [this github repo](https://github.com/gitmylo/bark-data-gen) with a link to download your semantics.
+
+## ------------- Old readme -------------
 # 🐶 Bark
 
 [![](https://dcbadge.vercel.app/api/server/J2B2vsjKuE?style=flat&compact=True)](https://discord.gg/J2B2vsjKuE)
