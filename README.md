@@ -14,7 +14,7 @@ Dataset created from shared npy files will be shared on huggingface
 ### Please share your created semantics to help me train
 Create a zip with your semantics. This is the data I'll need for training. There is still 2 more steps of processing required, but having the semantics helps out a bunch. Thanks.
 
-Send them in dms to `mylo#6228` on discord, or create an issue on [this github repo](https://github.com/gitmylo/bark-data-gen) with a link to download your semantics.
+Send them in dms to `mylo#6228` on discord, or create an issue on [this github repo](https://github.com/gitmylo/bark-data-gen/issues) with a link to download your semantics.
 
 ## ------------- Old readme -------------
 # 🐶 Bark
