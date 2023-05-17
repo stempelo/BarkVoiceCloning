@@ -12,11 +12,11 @@ books = [
     'https://www.gutenberg.org/cache/epub/100/pg100.txt'
 ]
 
-allowed_chars = ' abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()-_+=\"\':;[]{}/<>,.`~\n'
+allowed_chars = ' abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()-_+=\"\':;[]{}/<>,.`~\n\\'
 
 
 def download_book(book):
-    return requests.get(book).content
+    return requests.get(book).content.decode('utf-8')
 
 
 def filter_data(data):
@@ -29,7 +29,6 @@ def load_books():
     print(f'Loading {len(books)} books into ram')
     for book in books:
         text_data.append(filter_data(str(download_book(book))))
-        # text_data.append(str(download_book(book)))
     print('Loaded books')
     return ' '.join(text_data)
 

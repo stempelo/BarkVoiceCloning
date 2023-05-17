@@ -9,13 +9,17 @@
 
 > `pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu117 --force` - install torch with cuda (with --force to ensure it gets reinstalled)
 
-> `python create_data.py` - run the script (make sure you're in the venv if you're running it again later)
+> `python create_data.py` - run the script, outputs to `output` (make sure you're in the venv if you're running it again later)
+
+> `python create_wavs.py` - extra processing to create the wavs for the data. saved in `out_wavs`
 
 ## Currently there's no public training available.
 I will release my model when I consider it ready.
 Dataset created from shared npy files will be shared on huggingface
 
-### Please share your created semantics to help me train
+### Please share your created semantics and associated wavs to help me train
+Do NOT rename the files, making a mistake during renaming will pollute the training data. It won't know which wavs fit which semantics.
+
 Create a zip with your semantics. This is the data I'll need for training. There is still 2 more steps of processing required, but having the semantics helps out a bunch. Thanks.
 
 Send them in dms to `mylo#6228` on discord, or create an issue on [this github repo](https://github.com/gitmylo/bark-data-gen/issues) with a link to download your semantics.
