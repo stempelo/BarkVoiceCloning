@@ -13,16 +13,21 @@
 
 > `python create_wavs.py` - extra processing to create the wavs for the data. saved in `out_wavs`
 
-## Currently there's no public training available.
-I will release my model when I consider it ready.
-Dataset created from shared npy files will be shared on huggingface
+## ~Currently there's no public training available.~
+~I will release my model when I consider it ready.
+Dataset created from shared npy files will be shared on huggingface~
 
-### Please share your created semantics and associated wavs to help me train
-Do NOT rename the files, making a mistake during renaming will pollute the training data. It won't know which wavs fit which semantics.
+## Model, running and training.
+[Model](https://huggingface.co/GitMylo/bark-voice-cloning), [Training and running code](https://github.com/gitmylo/bark-voice-cloning-HuBERT-quantizer), [Dataset used](https://huggingface.co/datasets/GitMylo/bark-semantic-training)
 
-Create a zip with your semantics. This is the data I'll need for training. There is still 2 more steps of processing required, but having the semantics helps out a bunch. Thanks.
+### ~Please share your created semantics and associated wavs to help me train~
+~Do NOT rename the files, making a mistake during renaming will pollute the training data. It won't know which wavs fit which semantics.~
 
-Send them in dms to `mylo#6228` on discord, or create an issue on [this github repo](https://github.com/gitmylo/bark-data-gen/issues) with a link to download your semantics.
+~Create a zip with your semantics. This is the data I'll need for training. There is still 2 more steps of processing required, but having the semantics helps out a bunch. Thanks.~
+
+~Send them in dms to `mylo#6228` on discord, or create an issue on [this github repo](https://github.com/gitmylo/bark-data-gen/issues) with a link to download your semantics.~
+
+Training has completed.
 
 ## ------------- Old readme -------------
 # 🐶 Bark
